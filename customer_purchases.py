@@ -139,7 +139,7 @@ if uploaded_file:
         if outlier_percent > 10:
             st.write("⚠ High number of outliers detected — check for data entry errors or exceptional spenders.")
         else:
-            st.write("✅ Outliers are within a reasonable range.")
+            st.write(" Outliers are within a reasonable range.")
 
         # Download cleaned dataset
         st.subheader("Download Cleaned Dataset")
@@ -152,4 +152,5 @@ if uploaded_file:
 
 else:
     st.info("Please upload a CSV file to start the analysis.")
+
 
