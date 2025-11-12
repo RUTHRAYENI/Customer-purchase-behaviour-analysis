@@ -135,8 +135,6 @@ if uploaded_file is not None:
 
     st.subheader("📌 Insights Summary")
     st.write(f"Average Purchase Amount: ${mean_purchase:.2f}")
-    st.write(f"Median Purchase Amount: ${median_purchase:.2f}")
-    st.write(f"Most Common Purchase Amount: ${mode_purchase}")
     st.write(f"Highest Purchase Amount: ${max_purchase}")
     st.write(f"Outlier Customers (IQR): {len(outliers_iqr)} detected")
 
@@ -144,3 +142,4 @@ if uploaded_file is not None:
     # 10️⃣ Save Cleaned Dataset
     # -----------------------------
     df_iqr_clean.to_csv("customer_purchases_cleaned.csv", index=False)
+
